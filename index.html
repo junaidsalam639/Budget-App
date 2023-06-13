@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./web.js" defer></script>
+</head>
+<body>
+    <h1>Budget APP</h1>
+    <div class="buget">
+        <div class="text">
+            <h2>Budget</h2>
+            <input type="number" id="input1" placeholder="Enter Budget"><br>
+            <button onclick="budget()">Set Budget</button><br>
+        </div>
+        <div class="text">
+            <h2>Expenses</h2>
+            <input type="text" id="input2" placeholder="Enter title of Product"><br>
+            <input type="number" id="input3" placeholder="Enter cost of the Post"><br>
+            <button onclick="check()">Check Amount</button><br>
+        </div>
+    </div>
+    <div class="amount">
+        <div class="total">
+            <h2>Total Budget</h2><br>
+            <span id="total">0</span>
+        </div>
+        <div class="Expenses">
+            <h2>Expenses</h2><br>
+            <span id="expenses">0</span>
+        </div>
+        <div class="Balance">
+            <h2>Balance</h2><br>
+            <span id="balance">0</span>
+        </div>
+    </div>
+       <h1> Expenses List</h1>
+       <ul id="list">
+        
+       </ul>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    /* background-color: #f7f9fd; */
+    background: linear-gradient(135deg , green , rgba(0, 128, 0, 0.521));
+    margin-top: 50px;
+  }
+  .buget{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buget input{
+    width: 250px;
+    height: 30px;
+  }
+
+  .amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+ul li{
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+  color: green;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 30px;
+}
+ul div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+input{
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 128, 0, 0.521);
+  margin: 12px;
+  box-shadow: 0px 0px 10px #f7f9fd;
+  font-weight: bold;
+  padding-left: 10px;
+}
+button{
+  margin: 12px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 128, 0, 0.521);
+  background-color: rgba(0, 128, 0, 0.521);
+  color: #f7f9fd;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #f7f9fd;
+}
+button:hover{
+  background-color: rgba(0, 128, 0, 0);
+  color: #f7f9fd;
+}
+button:focus{
+  background-color: greenyellow;
+}
+
+h1{
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+h2{
+  color: green;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 30px;
+}
+span{
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+
+
+@media (max-width: 600px){
+  .buget{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  h2{
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px){
+  .amount{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .amount .total span{
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .amount .Expenses span{
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .amount .Balance span{
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+}
+
+
